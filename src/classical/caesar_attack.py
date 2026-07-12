@@ -10,7 +10,7 @@ def brute_force(ciphertext):
                  plaintext+=chr((ord(char)-97-i)%26 + 97)
             else:
                 plaintext+=char
-        print(f"Shift {i:2}:{plaintext}")
+        print(f"Shift {i:2}:{plaintext}\n")
 
 def main():
     print("Cryptanalysis of Caesar Cipher")
